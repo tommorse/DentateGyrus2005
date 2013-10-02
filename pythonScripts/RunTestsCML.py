@@ -28,7 +28,7 @@ sys.path.append(os.environ["NC_HOME"]+"/pythonNeuroML/nCUtils")
 
 import ncutils as nc # Many useful functions such as SimManager.runMultipleSims found here
 
-projFile = File(os.getcwd(), "../DentateGyrus.ncx")
+projFile = File(os.getcwd(), "../DentateGyrus2005.ncx")
 
 
 

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="GranuleCell">
+
+    <include href="borgka.nml"/>
+
+    <include href="cagk.nml"/>
+
+    <include href="ccanl.nml"/>
+
+    <include href="GranLeakCond.nml"/>
+
+    <include href="gskch.nml"/>
+
+    <include href="Kf_CML.nml"/>
+
+    <include href="Ks_CML.nml"/>
+
+    <include href="lca.nml"/>
+
+    <include href="Nat_CML.nml"/>
+
+    <include href="NCa_CML.nml"/>
+
+    <include href="tca.nml"/>
+
+    <cell id="GranuleCell">
+
+        <notes>Granule cell from Santhakumar V, Aradi I, Soltesz I. Role of mossy fiber sprouting and mossy cell loss in hyperexcitability: a network model of the dentate gyrus incorporating cell types and axonal topography. J Neurophysiol. 2005</notes>
+
+        <morphology id="morphology_GranuleCell">
+
+            <segment id="0" name="soma">
+                <proximal x="0.0" y="0.0" z="0.0" diameter="16.8"/>
+                <distal x="0.0" y="16.8" z="0.0" diameter="16.8"/>
+            </segment>
+
+            <segment id="1" name="gcdend1_0_seg">
+                <parent segment="0"/>
+                <proximal x="0.0" y="16.8" z="0.0" diameter="3.0"/>
+                <distal x="19.470917" y="62.85305" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="2" name="gcdend1_1_seg">
+                <parent segment="1"/>
+                <proximal x="19.470917" y="62.85305" z="0.0" diameter="3.0"/>
+                <distal x="77.88367" y="201.0122" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="3" name="gcdend1_2_seg">
+                <parent segment="2"/>
+                <proximal x="77.88367" y="201.0122" z="0.0" diameter="3.0"/>
+                <distal x="136.29642" y="339.17136" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="4" name="gcdend1_3_seg">
+                <parent segment="3"/>
+                <proximal x="136.29642" y="339.17136" z="0.0" diameter="3.0"/>
+                <distal x="194.70917" y="477.3305" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="5" name="gcdend2_0_seg">
+                <parent segment="0"/>
+                <proximal x="0.0" y="16.8" z="0.0" diameter="3.0"/>
+                <distal x="-19.470917" y="62.85305" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="6" name="gcdend2_1_seg">
+                <parent segment="5"/>
+                <proximal x="-19.470917" y="62.85305" z="0.0" diameter="3.0"/>
+                <distal x="-77.88367" y="201.0122" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="7" name="gcdend2_2_seg">
+                <parent segment="6"/>
+                <proximal x="-77.88367" y="201.0122" z="0.0" diameter="3.0"/>
+                <distal x="-136.29642" y="339.17136" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="8" name="gcdend2_3_seg">
+                <parent segment="7"/>
+                <proximal x="-136.29642" y="339.17136" z="0.0" diameter="3.0"/>
+                <distal x="-194.70917" y="477.3305" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segmentGroup id="soma">
+                <member segment="0"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend1_0">
+                <member segment="1"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend1_1">
+                <member segment="2"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend1_2">
+                <member segment="3"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend1_3">
+                <member segment="4"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend2_0">
+                <member segment="5"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend2_1">
+                <member segment="6"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend2_2">
+                <member segment="7"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcdend2_3">
+                <member segment="8"/>
+            </segmentGroup>
+
+            <segmentGroup id="all">
+                <include segmentGroup="soma"/>
+                <include segmentGroup="gcdend1_0"/>
+                <include segmentGroup="gcdend1_1"/>
+                <include segmentGroup="gcdend1_2"/>
+                <include segmentGroup="gcdend1_3"/>
+                <include segmentGroup="gcdend2_0"/>
+                <include segmentGroup="gcdend2_1"/>
+                <include segmentGroup="gcdend2_2"/>
+                <include segmentGroup="gcdend2_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma"/>
+            </segmentGroup>
+
+            <segmentGroup id="dendrite_group">
+                <include segmentGroup="gcdend1_0"/>
+                <include segmentGroup="gcdend1_1"/>
+                <include segmentGroup="gcdend1_2"/>
+                <include segmentGroup="gcdend1_3"/>
+                <include segmentGroup="gcdend2_0"/>
+                <include segmentGroup="gcdend2_1"/>
+                <include segmentGroup="gcdend2_2"/>
+                <include segmentGroup="gcdend2_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="gcldend">
+                <include segmentGroup="gcdend1_0"/>
+                <include segmentGroup="gcdend2_0"/>
+            </segmentGroup>
+
+            <segmentGroup id="pdend">
+                <include segmentGroup="gcdend1_1"/>
+                <include segmentGroup="gcdend2_1"/>
+            </segmentGroup>
+
+            <segmentGroup id="mdend">
+                <include segmentGroup="gcdend1_2"/>
+                <include segmentGroup="gcdend2_2"/>
+            </segmentGroup>
+
+            <segmentGroup id="ddend">
+                <include segmentGroup="gcdend1_3"/>
+                <include segmentGroup="gcdend2_3"/>
+            </segmentGroup>
+
+            
+        </morphology>
+
+            <!--Adding the biophysical parameters-->
+
+        <biophysicalProperties id="biophys">
+
+            <membraneProperties>
+
+                <channelDensity condDensity="0.063 mS_per_cm2" id="GranLeakCond_ddend" ionChannel="GranLeakCond" segmentGroup="ddend"/>
+
+                <channelDensity condDensity="0.063 mS_per_cm2" id="GranLeakCond_mdend" ionChannel="GranLeakCond" segmentGroup="mdend"/>
+
+                <channelDensity condDensity="0.063 mS_per_cm2" id="GranLeakCond_pdend" ionChannel="GranLeakCond" segmentGroup="pdend"/>
+
+                <channelDensity condDensity="0.04 mS_per_cm2" id="GranLeakCond_gcldend" ionChannel="GranLeakCond" segmentGroup="gcldend"/>
+
+                <channelDensity condDensity="0.04 mS_per_cm2" id="GranLeakCond_soma_group" ionChannel="GranLeakCond" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="Kf_CML_ddend" ionChannel="Kf_CML" segmentGroup="ddend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="Kf_CML_mdend" ionChannel="Kf_CML" segmentGroup="mdend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="4.0 mS_per_cm2" id="Kf_CML_gcldend" ionChannel="Kf_CML" segmentGroup="gcldend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="4.0 mS_per_cm2" id="Kf_CML_pdend" ionChannel="Kf_CML" segmentGroup="pdend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="16.0 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="6.0 mS_per_cm2" id="Ks_CML_gcldend" ionChannel="Ks_CML" segmentGroup="gcldend" ion="ks" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="6.0 mS_per_cm2" id="Ks_CML_mdend" ionChannel="Ks_CML" segmentGroup="mdend" ion="ks" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="6.0 mS_per_cm2" id="Ks_CML_pdend" ionChannel="Ks_CML" segmentGroup="pdend" ion="ks" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="6.0 mS_per_cm2" id="Ks_CML_soma_group" ionChannel="Ks_CML" segmentGroup="soma_group" ion="ks" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="8.0 mS_per_cm2" id="Ks_CML_ddend" ionChannel="Ks_CML" segmentGroup="ddend" ion="ks" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="NCa_CML_ddend" ionChannel="NCa_CML" segmentGroup="ddend" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="NCa_CML_mdend" ionChannel="NCa_CML" segmentGroup="mdend" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="NCa_CML_pdend" ionChannel="NCa_CML" segmentGroup="pdend" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="3.0 mS_per_cm2" id="NCa_CML_gcldend" ionChannel="NCa_CML" segmentGroup="gcldend" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="2.0 mS_per_cm2" id="NCa_CML_soma_group" ionChannel="NCa_CML" segmentGroup="soma_group" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend" ionChannel="Nat_CML" segmentGroup="ddend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="18.0 mS_per_cm2" id="Nat_CML_gcldend" ionChannel="Nat_CML" segmentGroup="gcldend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="13.0 mS_per_cm2" id="Nat_CML_pdend" ionChannel="Nat_CML" segmentGroup="pdend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="8.0 mS_per_cm2" id="Nat_CML_mdend" ionChannel="Nat_CML" segmentGroup="mdend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="12.0 mS_per_cm2" id="borgka_soma_group" ionChannel="borgka" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="2.4 mS_per_cm2" id="cagk_ddend" ionChannel="cagk" segmentGroup="ddend"/>
+
+                <channelDensity condDensity="2.4 mS_per_cm2" id="cagk_mdend" ionChannel="cagk" segmentGroup="mdend"/>
+
+                <channelDensity condDensity="0.6 mS_per_cm2" id="cagk_gcldend" ionChannel="cagk" segmentGroup="gcldend"/>
+
+                <channelDensity condDensity="0.6 mS_per_cm2" id="cagk_soma_group" ionChannel="cagk" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="cagk_pdend" ionChannel="cagk" segmentGroup="pdend"/>
+
+                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="gskch_ddend" ionChannel="gskch" segmentGroup="ddend"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="gskch_mdend" ionChannel="gskch" segmentGroup="mdend"/>
+
+                <channelDensity condDensity="0.2 mS_per_cm2" id="gskch_pdend" ionChannel="gskch" segmentGroup="pdend"/>
+
+                <channelDensity condDensity="0.4 mS_per_cm2" id="gskch_gcldend" ionChannel="gskch" segmentGroup="gcldend"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="gskch_soma_group" ionChannel="gskch" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="7.5 mS_per_cm2" id="lca_gcldend" ionChannel="lca" segmentGroup="gcldend"/>
+
+                <channelDensity condDensity="7.5 mS_per_cm2" id="lca_pdend" ionChannel="lca" segmentGroup="pdend"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="lca_ddend" ionChannel="lca" segmentGroup="ddend"/>
+
+                <channelDensity condDensity="0.5 mS_per_cm2" id="lca_mdend" ionChannel="lca" segmentGroup="mdend"/>
+
+                <channelDensity condDensity="5.0 mS_per_cm2" id="lca_soma_group" ionChannel="lca" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="1.0 mS_per_cm2" id="tca_ddend" ionChannel="tca" segmentGroup="ddend"/>
+
+                <channelDensity condDensity="0.5 mS_per_cm2" id="tca_mdend" ionChannel="tca" segmentGroup="mdend"/>
+
+                <channelDensity condDensity="0.037 mS_per_cm2" id="tca_soma_group" ionChannel="tca" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="0.075 mS_per_cm2" id="tca_gcldend" ionChannel="tca" segmentGroup="gcldend"/>
+
+                <channelDensity condDensity="0.25 mS_per_cm2" id="tca_pdend" ionChannel="tca" segmentGroup="pdend"/>
+
+                <spikeThresh value="0 mV"/>
+
+                <specificCapacitance segmentGroup="soma_group" value="1.0 uF_per_cm2"/>
+
+                <specificCapacitance segmentGroup="gcldend" value="1.0 uF_per_cm2"/>
+
+                <specificCapacitance segmentGroup="pdend" value="1.6 uF_per_cm2"/>
+
+                <specificCapacitance segmentGroup="mdend" value="1.6 uF_per_cm2"/>
+
+                <specificCapacitance segmentGroup="ddend" value="1.6 uF_per_cm2"/>
+
+                <initMembPotential value="-70.0 mV"/>
+
+            </membraneProperties>
+
+            <intracellularProperties>
+
+                <resistivity value="0.21 kohm_cm"/>
+
+            </intracellularProperties>
+
+        </biophysicalProperties>
+
+    </cell>
+    
+</neuroml>

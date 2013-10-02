@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="MossyCell">
+
+    <include href="borgka.nml"/>
+
+    <include href="cagk.nml"/>
+
+    <include href="ccanl.nml"/>
+
+    <include href="gskch.nml"/>
+
+    <include href="hyperde3.nml"/>
+
+    <include href="Kf_CML.nml"/>
+
+    <include href="lca.nml"/>
+
+    <include href="MossyLeakCond.nml"/>
+
+    <include href="Nat_CML.nml"/>
+
+    <include href="NCa_CML.nml"/>
+
+    <cell id="MossyCell">
+
+        <notes>Mossy Cell from Santhakumar V, Aradi I, Soltesz I. Role of mossy fiber sprouting and mossy cell loss in hyperexcitability: a network model of the dentate gyrus incorporating cell types and axonal topography. J Neurophysiol. 2005  </notes>
+
+        <morphology id="morphology_MossyCell">
+
+            <segment id="0" name="soma">
+                <proximal x="0.0" y="0.0" z="0.0" diameter="20.0"/>
+                <distal x="20.0" y="0.0" z="0.0" diameter="20.0"/>
+            </segment>
+
+            <segment id="1" name="mcdend1_0_seg">
+                <parent segment="0"/>
+                <proximal x="20.0" y="0.0" z="0.0" diameter="5.78"/>
+                <distal x="66.05305" y="19.470924" z="0.0" diameter="5.78"/>
+            </segment>
+
+            <segment id="2" name="mcdend1_1_seg">
+                <parent segment="1"/>
+                <proximal x="66.05305" y="19.470924" z="0.0" diameter="4.0"/>
+                <distal x="112.106094" y="38.94185" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="3" name="mcdend1_2_seg">
+                <parent segment="2"/>
+                <proximal x="112.106094" y="38.94185" z="0.0" diameter="2.5"/>
+                <distal x="158.15915" y="58.412773" z="0.0" diameter="2.5"/>
+            </segment>
+
+            <segment id="4" name="mcdend1_3_seg">
+                <parent segment="3"/>
+                <proximal x="158.15915" y="58.412773" z="0.0" diameter="1.0"/>
+                <distal x="204.2122" y="77.8837" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="5" name="mcdend2_0_seg">
+                <parent segment="0"/>
+                <proximal x="20.0" y="0.0" z="0.0" diameter="5.78"/>
+                <distal x="66.05305" y="-19.470924" z="0.0" diameter="5.78"/>
+            </segment>
+
+            <segment id="6" name="mcdend2_1_seg">
+                <parent segment="5"/>
+                <proximal x="66.05305" y="-19.470924" z="0.0" diameter="4.0"/>
+                <distal x="112.106094" y="-38.94185" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="7" name="mcdend2_2_seg">
+                <parent segment="6"/>
+                <proximal x="112.106094" y="-38.94185" z="0.0" diameter="2.5"/>
+                <distal x="158.15915" y="-58.412773" z="0.0" diameter="2.5"/>
+            </segment>
+
+            <segment id="8" name="mcdend2_3_seg">
+                <parent segment="7"/>
+                <proximal x="158.15915" y="-58.412773" z="0.0" diameter="1.0"/>
+                <distal x="204.2122" y="-77.8837" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="9" name="mcdend3_0_seg">
+                <parent segment="0" fractionAlong="0.0"/>
+                <proximal x="0.0" y="0.0" z="0.0" diameter="5.78"/>
+                <distal x="-46.05305" y="-19.470924" z="0.0" diameter="5.78"/>
+            </segment>
+
+            <segment id="10" name="mcdend3_1_seg">
+                <parent segment="9"/>
+                <proximal x="-46.05305" y="-19.470924" z="0.0" diameter="4.0"/>
+                <distal x="-92.1061" y="-38.94185" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="11" name="mcdend3_2_seg">
+                <parent segment="10"/>
+                <proximal x="-92.1061" y="-38.94185" z="0.0" diameter="2.5"/>
+                <distal x="-138.15915" y="-58.412773" z="0.0" diameter="2.5"/>
+            </segment>
+
+            <segment id="12" name="mcdend3_3_seg">
+                <parent segment="11"/>
+                <proximal x="-138.15915" y="-58.412773" z="0.0" diameter="1.0"/>
+                <distal x="-184.21219" y="-77.8837" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="13" name="mcdend4_0_seg">
+                <parent segment="0" fractionAlong="0.0"/>
+                <proximal x="0.0" y="0.0" z="0.0" diameter="5.78"/>
+                <distal x="-46.053047" y="19.470926" z="0.0" diameter="5.78"/>
+            </segment>
+
+            <segment id="14" name="mcdend4_1_seg">
+                <parent segment="13"/>
+                <proximal x="-46.053047" y="19.470926" z="0.0" diameter="4.0"/>
+                <distal x="-92.106094" y="38.941853" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="15" name="mcdend4_2_seg">
+                <parent segment="14"/>
+                <proximal x="-92.106094" y="38.941853" z="0.0" diameter="2.5"/>
+                <distal x="-138.15915" y="58.41278" z="0.0" diameter="2.5"/>
+            </segment>
+
+            <segment id="16" name="mcdend4_3_seg">
+                <parent segment="15"/>
+                <proximal x="-138.15915" y="58.41278" z="0.0" diameter="1.0"/>
+                <distal x="-184.2122" y="77.88371" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segmentGroup id="soma">
+                <member segment="0"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend1_0">
+                <member segment="1"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend1_1">
+                <member segment="2"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend1_2">
+                <member segment="3"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend1_3">
+                <member segment="4"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend2_0">
+                <member segment="5"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend2_1">
+                <member segment="6"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend2_2">
+                <member segment="7"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend2_3">
+                <member segment="8"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend3_0">
+                <member segment="9"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend3_1">
+                <member segment="10"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend3_2">
+                <member segment="11"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend3_3">
+                <member segment="12"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend4_0">
+                <member segment="13"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend4_1">
+                <member segment="14"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend4_2">
+                <member segment="15"/>
+            </segmentGroup>
+
+            <segmentGroup id="mcdend4_3">
+                <member segment="16"/>
+            </segmentGroup>
+
+            <segmentGroup id="all">
+                <include segmentGroup="soma"/>
+                <include segmentGroup="mcdend1_0"/>
+                <include segmentGroup="mcdend1_1"/>
+                <include segmentGroup="mcdend1_2"/>
+                <include segmentGroup="mcdend1_3"/>
+                <include segmentGroup="mcdend2_0"/>
+                <include segmentGroup="mcdend2_1"/>
+                <include segmentGroup="mcdend2_2"/>
+                <include segmentGroup="mcdend2_3"/>
+                <include segmentGroup="mcdend3_0"/>
+                <include segmentGroup="mcdend3_1"/>
+                <include segmentGroup="mcdend3_2"/>
+                <include segmentGroup="mcdend3_3"/>
+                <include segmentGroup="mcdend4_0"/>
+                <include segmentGroup="mcdend4_1"/>
+                <include segmentGroup="mcdend4_2"/>
+                <include segmentGroup="mcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma"/>
+            </segmentGroup>
+
+            <segmentGroup id="dendrite_group">
+                <include segmentGroup="mcdend1_0"/>
+                <include segmentGroup="mcdend1_1"/>
+                <include segmentGroup="mcdend1_2"/>
+                <include segmentGroup="mcdend1_3"/>
+                <include segmentGroup="mcdend2_0"/>
+                <include segmentGroup="mcdend2_1"/>
+                <include segmentGroup="mcdend2_2"/>
+                <include segmentGroup="mcdend2_3"/>
+                <include segmentGroup="mcdend3_0"/>
+                <include segmentGroup="mcdend3_1"/>
+                <include segmentGroup="mcdend3_2"/>
+                <include segmentGroup="mcdend3_3"/>
+                <include segmentGroup="mcdend4_0"/>
+                <include segmentGroup="mcdend4_1"/>
+                <include segmentGroup="mcdend4_2"/>
+                <include segmentGroup="mcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="pdend">
+                <include segmentGroup="mcdend1_0"/>
+                <include segmentGroup="mcdend2_0"/>
+                <include segmentGroup="mcdend3_0"/>
+                <include segmentGroup="mcdend4_0"/>
+            </segmentGroup>
+
+            <segmentGroup id="ddend3seg">
+                <include segmentGroup="mcdend1_1"/>
+                <include segmentGroup="mcdend1_2"/>
+                <include segmentGroup="mcdend1_3"/>
+                <include segmentGroup="mcdend2_1"/>
+                <include segmentGroup="mcdend2_2"/>
+                <include segmentGroup="mcdend2_3"/>
+                <include segmentGroup="mcdend3_1"/>
+                <include segmentGroup="mcdend3_2"/>
+                <include segmentGroup="mcdend3_3"/>
+                <include segmentGroup="mcdend4_1"/>
+                <include segmentGroup="mcdend4_2"/>
+                <include segmentGroup="mcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="mdend">
+                <include segmentGroup="mcdend1_2"/>
+                <include segmentGroup="mcdend2_2"/>
+                <include segmentGroup="mcdend3_2"/>
+                <include segmentGroup="mcdend4_2"/>
+            </segmentGroup>
+
+            <segmentGroup id="ddend1seg">
+                <include segmentGroup="mcdend1_3"/>
+                <include segmentGroup="mcdend2_3"/>
+                <include segmentGroup="mcdend3_3"/>
+                <include segmentGroup="mcdend4_3"/>
+            </segmentGroup>
+
+            
+        </morphology>
+
+            <!--Adding the biophysical parameters-->
+
+        <biophysicalProperties id="biophys">
+
+            <membraneProperties>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_ddend3seg" ionChannel="Kf_CML" segmentGroup="ddend3seg" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.5 mS_per_cm2" id="Kf_CML_pdend" ionChannel="Kf_CML" segmentGroup="pdend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.5 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.044 mS_per_cm2" id="MossyLeakCond_dendrite_group" ionChannel="MossyLeakCond" segmentGroup="dendrite_group"/>
+
+                <channelDensity condDensity="0.011 mS_per_cm2" id="MossyLeakCond_soma_group" ionChannel="MossyLeakCond" segmentGroup="soma_group"/>
+
+                <channelDensity condDensity="0.08 mS_per_cm2" id="NCa_CML_all" ionChannel="NCa_CML" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_pdend" ionChannel="Nat_CML" segmentGroup="pdend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend3seg" ionChannel="Nat_CML" segmentGroup="ddend3seg" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="0.01 mS_per_cm2" id="borgka_all" ionChannel="borgka"/>
+
+                <channelDensity condDensity="16.5 mS_per_cm2" id="cagk_all" ionChannel="cagk"/>
+
+                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
+
+                <channelDensity condDensity="16.0 mS_per_cm2" id="gskch_all" ionChannel="gskch"/>
+
+                <channelDensity condDensity="0.005 mS_per_cm2" id="hyperde3_all" ionChannel="hyperde3"/>
+
+                <channelDensity condDensity="0.6 mS_per_cm2" id="lca_all" ionChannel="lca"/>
+
+                <spikeThresh value="0 mV"/>
+
+                <specificCapacitance segmentGroup="soma_group" value="0.6 uF_per_cm2"/>
+
+                <specificCapacitance segmentGroup="dendrite_group" value="2.4 uF_per_cm2"/>
+
+                <initMembPotential value="-60.0 mV"/>
+
+            </membraneProperties>
+
+            <intracellularProperties>
+
+                <resistivity value="0.1 kohm_cm"/>
+
+            </intracellularProperties>
+
+        </biophysicalProperties>
+
+    </cell>
+    
+</neuroml>

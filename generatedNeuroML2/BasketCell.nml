@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2  https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2beta1.xsd" id="BasketCell">
+
+    <include href="BasketLeakCond.nml"/>
+
+    <include href="borgka.nml"/>
+
+    <include href="cagk.nml"/>
+
+    <include href="ccanl.nml"/>
+
+    <include href="gskch.nml"/>
+
+    <include href="Kf_CML.nml"/>
+
+    <include href="lca.nml"/>
+
+    <include href="Nat_CML.nml"/>
+
+    <include href="NCa_CML.nml"/>
+
+    <cell id="BasketCell">
+
+        <notes>Basket cell from Santhakumar V, Aradi I, Soltesz I. Role of mossy fiber sprouting and mossy cell loss in hyperexcitability: a network model of the dentate gyrus incorporating cell types and axonal topography. J Neurophysiol. 2005</notes>
+
+        <morphology id="morphology_BasketCell">
+
+            <segment id="0" name="soma">
+                <proximal x="0.0" y="0.0" z="0.0" diameter="15.0"/>
+                <distal x="0.0" y="20.0" z="0.0" diameter="15.0"/>
+            </segment>
+
+            <segment id="1" name="bcdend1_0_seg">
+                <parent segment="0"/>
+                <proximal x="0.0" y="20.0" z="0.0" diameter="4.0"/>
+                <distal x="29.206377" y="89.079575" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="2" name="bcdend1_1_seg">
+                <parent segment="1"/>
+                <proximal x="29.206377" y="89.079575" z="0.0" diameter="3.0"/>
+                <distal x="58.412754" y="158.15915" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="3" name="bcdend1_2_seg">
+                <parent segment="2"/>
+                <proximal x="58.412754" y="158.15915" z="0.0" diameter="2.0"/>
+                <distal x="87.61913" y="227.23872" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="4" name="bcdend1_3_seg">
+                <parent segment="3"/>
+                <proximal x="87.61913" y="227.23872" z="0.0" diameter="1.0"/>
+                <distal x="116.825516" y="296.3183" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="5" name="bcdend2_0_seg">
+                <parent segment="0"/>
+                <proximal x="0.0" y="20.0" z="0.0" diameter="4.0"/>
+                <distal x="-29.206377" y="89.079575" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="6" name="bcdend2_1_seg">
+                <parent segment="5"/>
+                <proximal x="-29.206377" y="89.079575" z="0.0" diameter="3.0"/>
+                <distal x="-58.412754" y="158.15915" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="7" name="bcdend2_2_seg">
+                <parent segment="6"/>
+                <proximal x="-58.412754" y="158.15915" z="0.0" diameter="2.0"/>
+                <distal x="-87.61913" y="227.23872" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="8" name="bcdend2_3_seg">
+                <parent segment="7"/>
+                <proximal x="-87.61913" y="227.23872" z="0.0" diameter="1.0"/>
+                <distal x="-116.825516" y="296.3183" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="9" name="bcdend3_0_seg">
+                <parent segment="0" fractionAlong="0.0"/>
+                <proximal x="0.0" y="0.0" z="0.0" diameter="4.0"/>
+                <distal x="-19.470915" y="-46.05305" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="10" name="bcdend3_1_seg">
+                <parent segment="9"/>
+                <proximal x="-19.470915" y="-46.05305" z="0.0" diameter="3.0"/>
+                <distal x="-38.94183" y="-92.1061" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="11" name="bcdend3_2_seg">
+                <parent segment="10"/>
+                <proximal x="-38.94183" y="-92.1061" z="0.0" diameter="2.0"/>
+                <distal x="-58.412743" y="-138.15915" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="12" name="bcdend3_3_seg">
+                <parent segment="11"/>
+                <proximal x="-58.412743" y="-138.15915" z="0.0" diameter="1.0"/>
+                <distal x="-77.88365" y="-184.21219" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segment id="13" name="bcdend4_0_seg">
+                <parent segment="0" fractionAlong="0.0"/>
+                <proximal x="0.0" y="0.0" z="0.0" diameter="4.0"/>
+                <distal x="19.470915" y="-46.05305" z="0.0" diameter="4.0"/>
+            </segment>
+
+            <segment id="14" name="bcdend4_1_seg">
+                <parent segment="13"/>
+                <proximal x="19.470915" y="-46.05305" z="0.0" diameter="3.0"/>
+                <distal x="38.94183" y="-92.1061" z="0.0" diameter="3.0"/>
+            </segment>
+
+            <segment id="15" name="bcdend4_2_seg">
+                <parent segment="14"/>
+                <proximal x="38.94183" y="-92.1061" z="0.0" diameter="2.0"/>
+                <distal x="58.412743" y="-138.15915" z="0.0" diameter="2.0"/>
+            </segment>
+
+            <segment id="16" name="bcdend4_3_seg">
+                <parent segment="15"/>
+                <proximal x="58.412743" y="-138.15915" z="0.0" diameter="1.0"/>
+                <distal x="77.88365" y="-184.21219" z="0.0" diameter="1.0"/>
+            </segment>
+
+            <segmentGroup id="soma">
+                <member segment="0"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend1_0">
+                <member segment="1"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend1_1">
+                <member segment="2"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend1_2">
+                <member segment="3"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend1_3">
+                <member segment="4"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend2_0">
+                <member segment="5"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend2_1">
+                <member segment="6"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend2_2">
+                <member segment="7"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend2_3">
+                <member segment="8"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend3_0">
+                <member segment="9"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend3_1">
+                <member segment="10"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend3_2">
+                <member segment="11"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend3_3">
+                <member segment="12"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend4_0">
+                <member segment="13"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend4_1">
+                <member segment="14"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend4_2">
+                <member segment="15"/>
+            </segmentGroup>
+
+            <segmentGroup id="bcdend4_3">
+                <member segment="16"/>
+            </segmentGroup>
+
+            <segmentGroup id="all">
+                <include segmentGroup="soma"/>
+                <include segmentGroup="bcdend1_0"/>
+                <include segmentGroup="bcdend1_1"/>
+                <include segmentGroup="bcdend1_2"/>
+                <include segmentGroup="bcdend1_3"/>
+                <include segmentGroup="bcdend2_0"/>
+                <include segmentGroup="bcdend2_1"/>
+                <include segmentGroup="bcdend2_2"/>
+                <include segmentGroup="bcdend2_3"/>
+                <include segmentGroup="bcdend3_0"/>
+                <include segmentGroup="bcdend3_1"/>
+                <include segmentGroup="bcdend3_2"/>
+                <include segmentGroup="bcdend3_3"/>
+                <include segmentGroup="bcdend4_0"/>
+                <include segmentGroup="bcdend4_1"/>
+                <include segmentGroup="bcdend4_2"/>
+                <include segmentGroup="bcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="soma_group">
+                <include segmentGroup="soma"/>
+            </segmentGroup>
+
+            <segmentGroup id="dendrite_group">
+                <include segmentGroup="bcdend1_0"/>
+                <include segmentGroup="bcdend1_1"/>
+                <include segmentGroup="bcdend1_2"/>
+                <include segmentGroup="bcdend1_3"/>
+                <include segmentGroup="bcdend2_0"/>
+                <include segmentGroup="bcdend2_1"/>
+                <include segmentGroup="bcdend2_2"/>
+                <include segmentGroup="bcdend2_3"/>
+                <include segmentGroup="bcdend3_0"/>
+                <include segmentGroup="bcdend3_1"/>
+                <include segmentGroup="bcdend3_2"/>
+                <include segmentGroup="bcdend3_3"/>
+                <include segmentGroup="bcdend4_0"/>
+                <include segmentGroup="bcdend4_1"/>
+                <include segmentGroup="bcdend4_2"/>
+                <include segmentGroup="bcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="adend">
+                <include segmentGroup="bcdend1_0"/>
+                <include segmentGroup="bcdend2_0"/>
+                <include segmentGroup="bcdend3_0"/>
+                <include segmentGroup="bcdend4_0"/>
+            </segmentGroup>
+
+            <segmentGroup id="bdend">
+                <include segmentGroup="bcdend1_1"/>
+                <include segmentGroup="bcdend2_1"/>
+                <include segmentGroup="bcdend3_1"/>
+                <include segmentGroup="bcdend4_1"/>
+            </segmentGroup>
+
+            <segmentGroup id="bdend_apical">
+                <include segmentGroup="bcdend1_1"/>
+                <include segmentGroup="bcdend2_1"/>
+            </segmentGroup>
+
+            <segmentGroup id="cdend">
+                <include segmentGroup="bcdend1_2"/>
+                <include segmentGroup="bcdend2_2"/>
+                <include segmentGroup="bcdend3_2"/>
+                <include segmentGroup="bcdend4_2"/>
+            </segmentGroup>
+
+            <segmentGroup id="ddend">
+                <include segmentGroup="bcdend1_3"/>
+                <include segmentGroup="bcdend2_3"/>
+                <include segmentGroup="bcdend3_3"/>
+                <include segmentGroup="bcdend4_3"/>
+            </segmentGroup>
+
+            <segmentGroup id="ddend_apical">
+                <include segmentGroup="bcdend1_3"/>
+                <include segmentGroup="bcdend2_3"/>
+            </segmentGroup>
+
+            
+        </morphology>
+
+            <!--Adding the biophysical parameters-->
+
+        <biophysicalProperties id="biophys">
+
+            <membraneProperties>
+
+                <channelDensity condDensity="0.18 mS_per_cm2" id="BasketLeakCond_all" ionChannel="BasketLeakCond"/>
+
+                <channelDensity condDensity="13.0 mS_per_cm2" id="Kf_CML_adend" ionChannel="Kf_CML" segmentGroup="adend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="13.0 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_bdend" ionChannel="Kf_CML" segmentGroup="bdend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_cdend" ionChannel="Kf_CML" segmentGroup="cdend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_ddend" ionChannel="Kf_CML" segmentGroup="ddend" ion="kf" erev="-90.0 mV"/>
+
+                <channelDensity condDensity="0.8 mS_per_cm2" id="NCa_CML_all" ionChannel="NCa_CML" ion="nca" erev="0.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_bdend" ionChannel="Nat_CML" segmentGroup="bdend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_cdend" ionChannel="Nat_CML" segmentGroup="cdend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend" ionChannel="Nat_CML" segmentGroup="ddend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_adend" ionChannel="Nat_CML" segmentGroup="adend" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
+
+                <channelDensity condDensity="0.15 mS_per_cm2" id="borgka_all" ionChannel="borgka"/>
+
+                <channelDensity condDensity="0.2 mS_per_cm2" id="cagk_all" ionChannel="cagk"/>
+
+                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
+
+                <channelDensity condDensity="0.002 mS_per_cm2" id="gskch_all" ionChannel="gskch"/>
+
+                <channelDensity condDensity="5.0 mS_per_cm2" id="lca_all" ionChannel="lca"/>
+
+                <spikeThresh value="0 mV"/>
+
+                <specificCapacitance value="1.4 uF_per_cm2"/>
+
+                <initMembPotential value="-70.0 mV"/>
+
+            </membraneProperties>
+
+            <intracellularProperties>
+
+                <resistivity value="0.1 kohm_cm"/>
+
+            </intracellularProperties>
+
+        </biophysicalProperties>
+
+    </cell>
+    
+</neuroml>
