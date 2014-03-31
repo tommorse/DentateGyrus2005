@@ -278,60 +278,6 @@
             
         </morphology>
 
-            <!--Adding the biophysical parameters-->
-
-        <biophysicalProperties id="biophys">
-
-            <membraneProperties>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_ddend3seg" ionChannel="Kf_CML" segmentGroup="ddend3seg" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.5 mS_per_cm2" id="Kf_CML_pdend" ionChannel="Kf_CML" segmentGroup="pdend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.5 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.044 mS_per_cm2" id="MossyLeakCond_dendrite_group" ionChannel="MossyLeakCond" segmentGroup="dendrite_group"/>
-
-                <channelDensity condDensity="0.011 mS_per_cm2" id="MossyLeakCond_soma_group" ionChannel="MossyLeakCond" segmentGroup="soma_group"/>
-
-                <channelDensity condDensity="0.08 mS_per_cm2" id="NCa_CML_all" ionChannel="NCa_CML" ion="nca" erev="0.0 mV"/>
-
-                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_pdend" ionChannel="Nat_CML" segmentGroup="pdend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend3seg" ionChannel="Nat_CML" segmentGroup="ddend3seg" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.01 mS_per_cm2" id="borgka_all" ionChannel="borgka"/>
-
-                <channelDensity condDensity="16.5 mS_per_cm2" id="cagk_all" ionChannel="cagk"/>
-
-                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
-
-                <channelDensity condDensity="16.0 mS_per_cm2" id="gskch_all" ionChannel="gskch"/>
-
-                <channelDensity condDensity="0.005 mS_per_cm2" id="hyperde3_all" ionChannel="hyperde3"/>
-
-                <channelDensity condDensity="0.6 mS_per_cm2" id="lca_all" ionChannel="lca"/>
-
-                <spikeThresh value="0 mV"/>
-
-                <specificCapacitance segmentGroup="soma_group" value="0.6 uF_per_cm2"/>
-
-                <specificCapacitance segmentGroup="dendrite_group" value="2.4 uF_per_cm2"/>
-
-                <initMembPotential value="-60.0 mV"/>
-
-            </membraneProperties>
-
-            <intracellularProperties>
-
-                <resistivity value="0.1 kohm_cm"/>
-
-            </intracellularProperties>
-
-        </biophysicalProperties>
-
     </cell>
     
 </neuroml>

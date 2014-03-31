@@ -278,62 +278,6 @@
             
         </morphology>
 
-            <!--Adding the biophysical parameters-->
-
-        <biophysicalProperties id="biophys">
-
-            <membraneProperties>
-
-                <channelDensity condDensity="0.18 mS_per_cm2" id="BasketLeakCond_all" ionChannel="BasketLeakCond"/>
-
-                <channelDensity condDensity="13.0 mS_per_cm2" id="Kf_CML_adend" ionChannel="Kf_CML" segmentGroup="adend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="13.0 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_bdend" ionChannel="Kf_CML" segmentGroup="bdend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_cdend" ionChannel="Kf_CML" segmentGroup="cdend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_ddend" ionChannel="Kf_CML" segmentGroup="ddend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.8 mS_per_cm2" id="NCa_CML_all" ionChannel="NCa_CML" ion="nca" erev="0.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_bdend" ionChannel="Nat_CML" segmentGroup="bdend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_cdend" ionChannel="Nat_CML" segmentGroup="cdend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend" ionChannel="Nat_CML" segmentGroup="ddend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_adend" ionChannel="Nat_CML" segmentGroup="adend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="120.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.15 mS_per_cm2" id="borgka_all" ionChannel="borgka"/>
-
-                <channelDensity condDensity="0.2 mS_per_cm2" id="cagk_all" ionChannel="cagk"/>
-
-                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
-
-                <channelDensity condDensity="0.002 mS_per_cm2" id="gskch_all" ionChannel="gskch"/>
-
-                <channelDensity condDensity="5.0 mS_per_cm2" id="lca_all" ionChannel="lca"/>
-
-                <spikeThresh value="0 mV"/>
-
-                <specificCapacitance value="1.4 uF_per_cm2"/>
-
-                <initMembPotential value="-70.0 mV"/>
-
-            </membraneProperties>
-
-            <intracellularProperties>
-
-                <resistivity value="0.1 kohm_cm"/>
-
-            </intracellularProperties>
-
-        </biophysicalProperties>
-
     </cell>
     
 </neuroml>

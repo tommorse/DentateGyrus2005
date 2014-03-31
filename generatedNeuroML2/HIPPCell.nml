@@ -219,56 +219,6 @@
             
         </morphology>
 
-            <!--Adding the biophysical parameters-->
-
-        <biophysicalProperties id="biophys">
-
-            <membraneProperties>
-
-                <channelDensity condDensity="0.036 mS_per_cm2" id="HIPPLeakCond_all" ionChannel="HIPPLeakCond"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Kf_CML_ddend" ionChannel="Kf_CML" segmentGroup="ddend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="6.0 mS_per_cm2" id="Kf_CML_pdend" ionChannel="Kf_CML" segmentGroup="pdend" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="6.0 mS_per_cm2" id="Kf_CML_soma_group" ionChannel="Kf_CML" segmentGroup="soma_group" ion="kf" erev="-90.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="NCa_CML_all" ionChannel="NCa_CML" ion="nca" erev="0.0 mV"/>
-
-                <channelDensity condDensity="200.0 mS_per_cm2" id="Nat_CML_pdend" ionChannel="Nat_CML" segmentGroup="pdend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="200.0 mS_per_cm2" id="Nat_CML_soma_group" ionChannel="Nat_CML" segmentGroup="soma_group" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.0 mS_per_cm2" id="Nat_CML_ddend" ionChannel="Nat_CML" segmentGroup="ddend" ion="nat" erev="45.0 mV"/>
-
-                <channelDensity condDensity="0.8 mS_per_cm2" id="borgka_all" ionChannel="borgka"/>
-
-                <channelDensity condDensity="3.0 mS_per_cm2" id="cagk_all" ionChannel="cagk"/>
-
-                <channelDensity condDensity="100000.0 mS_per_cm2" id="ccanl_all" ionChannel="ccanl"/>
-
-                <channelDensity condDensity="3.0 mS_per_cm2" id="gskch_all" ionChannel="gskch"/>
-
-                <channelDensity condDensity="0.015 mS_per_cm2" id="hyperde3_all" ionChannel="hyperde3"/>
-
-                <channelDensity condDensity="1.5 mS_per_cm2" id="lca_all" ionChannel="lca"/>
-
-                <spikeThresh value="0 mV"/>
-
-                <specificCapacitance value="1.1 uF_per_cm2"/>
-
-                <initMembPotential value="-70.0 mV"/>
-
-            </membraneProperties>
-
-            <intracellularProperties>
-
-                <resistivity value="0.1 kohm_cm"/>
-
-            </intracellularProperties>
-
-        </biophysicalProperties>
-
     </cell>
     
 </neuroml>
