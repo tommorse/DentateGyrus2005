@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.6.0_27" class="java.beans.XMLDecoder">
+<java version="1.7.0_55" class="java.beans.XMLDecoder">
 
 <!-- This is a neuroConstruct project file. It's best to open this
 file with neuroConstruct, as opposed to editing it directly. 
@@ -28,7 +28,7 @@ Max allowed electrotonic length of 0.21 is probably too long...
 </string>
   </void>
   <void property="projectFileVersion">
-   <string>neuroConstruct v1.7.0</string>
+   <string>neuroConstruct v1.7.1</string>
   </void>
   <void property="projectName">
    <string>DentateGyrus2005</string>
@@ -102,50 +102,31 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
       <void property="parameterList">
-       <void index="3">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter0" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter0"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-       <void index="4">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter1" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter1"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-       <void index="5">
-        <void property="value">
-         <float>1000.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>-10.0</float>
-        </void>
-       </void>
-       <void index="1">
-        <void property="value">
-         <float>-100.0</float>
-        </void>
-       </void>
-       <void index="3">
-        <void property="value">
-         <float>50.0</float>
-        </void>
-       </void>
-       <void index="4">
-        <void property="value">
-         <float>50.0</float>
-        </void>
-       </void>
-       <void index="5">
-        <void property="value">
-         <float>1000.0</float>
+       <void id="InternalParameter2" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter2"/>
+          <float>1000.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -154,55 +135,49 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
       <void property="parameterList">
-       <void index="1">
-        <void property="value">
-         <float>-50.0</float>
+       <void id="InternalParameter3" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter3"/>
+          <float>-10.0</float>
+         </void>
         </void>
        </void>
-       <void index="3">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter4" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter4"/>
+          <float>-100.0</float>
+         </void>
         </void>
        </void>
-       <void index="4">
-        <void property="value">
-         <float>50.0</float>
+       <void id="InternalParameter5" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter5"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-       <void index="5">
-        <void property="value">
-         <float>1000.0</float>
+       <void id="InternalParameter6" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter6"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>-10.0</float>
-        </void>
-       </void>
-       <void index="1">
-        <void property="value">
-         <float>-150.0</float>
-        </void>
-       </void>
-       <void index="3">
-        <void property="value">
-         <float>50.0</float>
-        </void>
-       </void>
-       <void index="4">
-        <void property="value">
-         <float>50.0</float>
-        </void>
-       </void>
-       <void index="5">
-        <void property="value">
-         <float>1000.0</float>
+       <void id="InternalParameter7" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter7"/>
+          <float>1000.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -211,34 +186,151 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>-250.0</float>
+       <void id="InternalParameter8" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter8"/>
+          <float>-50.0</float>
+         </void>
         </void>
        </void>
-       <void index="1">
-        <void property="value">
-         <float>400.0</float>
+       <void id="InternalParameter9" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter9"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-       <void index="2">
-        <void property="value">
-         <float>500.0</float>
+       <void id="InternalParameter10" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter10"/>
+          <float>50.0</float>
+         </void>
         </void>
        </void>
-       <void index="3">
-        <void property="value">
-         <float>500.0</float>
+       <void id="InternalParameter11" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter11"/>
+          <float>1000.0</float>
+         </void>
         </void>
        </void>
-       <void index="4">
-        <void property="value">
-         <float>1.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
+       <void id="InternalParameter12" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter12"/>
+          <float>-10.0</float>
+         </void>
         </void>
        </void>
-       <void index="5">
-        <void property="value">
-         <float>1.0</float>
+       <void id="InternalParameter13" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter13"/>
+          <float>-150.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter14" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter14"/>
+          <float>50.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter15" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter15"/>
+          <float>50.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter16" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter16"/>
+          <float>1000.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.RectangularBox">
+      <void property="parameterList">
+       <void id="InternalParameter17" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter17"/>
+          <float>-250.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter18" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter18"/>
+          <float>400.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter19" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter19"/>
+          <float>500.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter20" index="3">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter20"/>
+          <float>500.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter21" index="4">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter21"/>
+          <float>1.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter22" index="5">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter22"/>
+          <float>1.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -254,40 +346,31 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
+       <void id="InternalParameter23" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter23"/>
+          <float>0.0</float>
+         </void>
         </void>
        </void>
-       <void index="1">
-        <void property="value">
-         <float>2.0</float>
+       <void id="InternalParameter24" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter24"/>
+          <float>2.0</float>
+         </void>
         </void>
        </void>
-       <void index="2">
-        <void property="value">
-         <float>500.0</float>
-        </void>
-       </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
-        </void>
-       </void>
-       <void index="1">
-        <void property="value">
-         <float>2.0</float>
-        </void>
-       </void>
-       <void index="2">
-        <void property="value">
-         <float>15.0</float>
+       <void id="InternalParameter25" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter25"/>
+          <float>500.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -296,35 +379,31 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
+       <void id="InternalParameter26" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter26"/>
+          <float>0.0</float>
+         </void>
         </void>
        </void>
-       <void index="2">
-        <void property="value">
-         <float>2.0</float>
+       <void id="InternalParameter27" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter27"/>
+          <float>2.0</float>
+         </void>
         </void>
        </void>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
-      <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
-        </void>
-       </void>
-       <void index="1">
-        <void property="value">
-         <float>2.0</float>
-        </void>
-       </void>
-       <void index="2">
-        <void property="value">
-         <float>6.0</float>
+       <void id="InternalParameter28" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter28"/>
+          <float>15.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -333,19 +412,88 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
       <void property="parameterList">
-       <void index="0">
-        <void property="value">
-         <float>0.0</float>
+       <void id="InternalParameter29" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter29"/>
+          <float>0.0</float>
+         </void>
         </void>
        </void>
-       <void index="1">
-        <void property="value">
-         <float>2.0</float>
+       <void id="InternalParameter30" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter30"/>
+          <float>2.0</float>
+         </void>
         </void>
        </void>
-       <void index="2">
-        <void property="value">
-         <float>6.0</float>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
+      <void property="parameterList">
+       <void id="InternalParameter31" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter31"/>
+          <float>0.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter32" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter32"/>
+          <float>2.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter33" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter33"/>
+          <float>6.0</float>
+         </void>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.OneDimRegSpacingPackingAdapter">
+      <void property="parameterList">
+       <void id="InternalParameter34" index="0">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter34"/>
+          <float>0.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter35" index="1">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter35"/>
+          <float>2.0</float>
+         </void>
+        </void>
+       </void>
+       <void id="InternalParameter36" index="2">
+        <void class="ucl.physiol.neuroconstruct.project.InternalParameter" method="getField">
+         <string>value</string>
+         <void method="set">
+          <object idref="InternalParameter36"/>
+          <float>6.0</float>
+         </void>
         </void>
        </void>
       </void>
@@ -396,6 +544,9 @@ Max allowed electrotonic length of 0.21 is probably too long...
     </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.packing.RandomCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
     </void>
    </void>
    <void method="get">
@@ -445,6 +596,9 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <void method="add">
      <string>HIPPCell</string>
     </void>
+    <void method="add">
+     <string>MostXML</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
@@ -492,6 +646,9 @@ Max allowed electrotonic length of 0.21 is probably too long...
     </void>
     <void method="add">
      <int>-4</int>
+    </void>
+    <void method="add">
+     <int>-5</int>
     </void>
    </void>
    <void method="get">
@@ -616,6 +773,14 @@ Max allowed electrotonic length of 0.21 is probably too long...
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>201</int>
+      <int>230</int>
+      <int>42</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
@@ -651,6 +816,9 @@ Max allowed electrotonic length of 0.21 is probably too long...
     </void>
     <void method="add">
      <string>HIPPCellLayer</string>
+    </void>
+    <void method="add">
+     <string>GranuleCellLayer</string>
     </void>
     <void method="add">
      <string>GranuleCellLayer</string>
@@ -711,6 +879,9 @@ Max allowed electrotonic length of 0.21 is probably too long...
     </void>
     <void method="add">
      <string>OneHC</string>
+    </void>
+    <void method="add">
+     <string>SomeXML</string>
     </void>
    </void>
   </void>
@@ -1736,10 +1907,41 @@ Max allowed electrotonic length of 0.21 is probably too long...
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>SomeXML</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>SomeXML_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>SomeXML_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.ProjectProperties"/>
  <object class="ucl.physiol.neuroconstruct.utils.Display3DProperties">
+  <void property="antiAliasing">
+   <int>1</int>
+  </void>
   <void property="backgroundColour3D">
    <object class="java.awt.Color">
     <int>255</int>
@@ -1789,11 +1991,11 @@ Max allowed electrotonic length of 0.21 is probably too long...
     <string></string>
    </void>
    <void method="put">
-    <float>-1.0</float>
+    <float>1.0</float>
     <string></string>
    </void>
    <void method="put">
-    <float>1.0</float>
+    <float>-1.0</float>
     <string></string>
    </void>
    <void method="put">
@@ -1940,7 +2142,7 @@ cao_ccanl=2
    <float>0.21</float>
   </void>
   <void property="reference">
-   <string>basicNetwork_231</string>
+   <string>basicNetwork_235</string>
   </void>
   <void property="saveCopyGenSimFiles">
    <boolean>true</boolean>
@@ -1966,12 +2168,16 @@ cao_ccanl=2
        <float>5.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator0" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator0"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>1.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -1989,9 +2195,13 @@ cao_ccanl=2
      <void property="cellGroup">
       <string>Orig</string>
      </void>
-     <void property="dur">
-      <void property="numberType">
-       <int>11</int>
+     <void id="NumberGenerator1" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator1"/>
+        <int>11</int>
+       </void>
       </void>
      </void>
      <void property="reference">
@@ -2009,9 +2219,13 @@ cao_ccanl=2
      <void property="cellGroup">
       <string>XML</string>
      </void>
-     <void property="dur">
-      <void property="numberType">
-       <int>11</int>
+     <void id="NumberGenerator2" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator2"/>
+        <int>11</int>
+       </void>
       </void>
      </void>
      <void property="reference">
@@ -2037,12 +2251,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator3" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator3"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2076,12 +2294,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator4" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator4"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2107,12 +2329,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator5" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator5"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2146,12 +2372,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator6" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator6"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2177,12 +2407,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator7" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator7"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2216,12 +2450,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator8" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator8"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2247,12 +2485,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator9" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator9"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2286,12 +2528,16 @@ cao_ccanl=2
        <float>200.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator10" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator10"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>600.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2314,12 +2560,16 @@ cao_ccanl=2
        <float>0.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator11" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator11"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>1000.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2342,12 +2592,16 @@ cao_ccanl=2
        <float>0.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator12" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator12"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>1000.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2370,12 +2624,16 @@ cao_ccanl=2
        <float>0.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator13" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator13"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>1000.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
@@ -2398,16 +2656,44 @@ cao_ccanl=2
        <float>0.0</float>
       </void>
      </void>
-     <void property="dur">
+     <void id="NumberGenerator14" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator14"/>
+        <int>11</int>
+       </void>
+      </void>
       <void property="fixedNum">
        <float>1000.0</float>
-      </void>
-      <void property="numberType">
-       <int>11</int>
       </void>
      </void>
      <void property="reference">
       <string>Input_13</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.simulation.IClampSettings">
+     <void property="amp">
+      <void property="fixedNum">
+       <float>0.02</float>
+      </void>
+     </void>
+     <void property="cellGroup">
+      <string>SomeXML</string>
+     </void>
+     <void id="NumberGenerator15" property="dur">
+      <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+       <string>numberType</string>
+       <void method="set">
+        <object idref="NumberGenerator15"/>
+        <int>11</int>
+       </void>
+      </void>
+     </void>
+     <void property="reference">
+      <string>Input_14</string>
      </void>
     </object>
    </void>
@@ -2920,6 +3206,31 @@ cao_ccanl=2
      </void>
     </object>
    </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimConfig">
+     <void property="cellGroups">
+      <void method="add">
+       <string>SomeXML</string>
+      </void>
+     </void>
+     <void property="inputs">
+      <void method="add">
+       <string>Input_14</string>
+      </void>
+     </void>
+     <void property="name">
+      <string>TestSome</string>
+     </void>
+     <void property="plots">
+      <void method="add">
+       <string>SomeXML_v</string>
+      </void>
+     </void>
+     <void property="simDuration">
+      <float>100.0</float>
+     </void>
+    </object>
+   </void>
   </void>
  </object>
  <object class="ucl.physiol.neuroconstruct.project.SimpleNetworkConnectionsInfo">
@@ -3015,12 +3326,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator16">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator16"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3031,9 +3346,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator0">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator0"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3046,12 +3365,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator17">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator17"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>1.5</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3062,9 +3385,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator1">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator1"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3077,12 +3404,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator18">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator18"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3093,9 +3424,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator2">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator2"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3108,12 +3443,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator19">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator19"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3124,9 +3463,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator3">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator3"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3139,12 +3482,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator20">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator20"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>0.8</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3155,9 +3502,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator4">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator4"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3170,12 +3521,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator21">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator21"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>0.8</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3186,9 +3541,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator5">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator5"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3201,12 +3560,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator22">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator22"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>1.5</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3217,9 +3580,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator6">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator6"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3232,9 +3599,13 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator23">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator23"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3245,9 +3616,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator7">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator7"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3260,12 +3635,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator24">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator24"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>2.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3276,9 +3655,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator8">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator8"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3291,12 +3674,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator25">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator25"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3307,9 +3694,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator9">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator9"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3322,12 +3713,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator26">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator26"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3338,9 +3733,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator10">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator10"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3353,12 +3752,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator27">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator27"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>0.85</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3369,9 +3772,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator11">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator11"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3384,12 +3791,16 @@ cao_ccanl=2
       <void method="add">
        <object class="ucl.physiol.neuroconstruct.project.SynapticProperties">
         <void property="delayGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator">
+         <object class="ucl.physiol.neuroconstruct.utils.NumberGenerator" id="NumberGenerator28">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="NumberGenerator28"/>
+            <int>11</int>
+           </void>
+          </void>
           <void property="fixedNum">
            <float>3.0</float>
-          </void>
-          <void property="numberType">
-           <int>11</int>
           </void>
          </object>
         </void>
@@ -3400,9 +3811,13 @@ cao_ccanl=2
          <double>10.0</double>
         </void>
         <void property="weightsGenerator">
-         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator">
-          <void property="numberType">
-           <int>11</int>
+         <object class="ucl.physiol.neuroconstruct.utils.WeightGenerator" id="WeightGenerator12">
+          <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+           <string>numberType</string>
+           <void method="set">
+            <object idref="WeightGenerator12"/>
+            <int>11</int>
+           </void>
           </void>
          </object>
         </void>
@@ -3526,96 +3941,152 @@ cao_ccanl=2
    <void method="get">
     <string>Search Pattern</string>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>2</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern0">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern0"/>
+        <int>2</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern1">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern1"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern2">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern2"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>2</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern3">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern3"/>
+        <int>2</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern4">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern4"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern5">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern5"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern6">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern6"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="randomCloseNumber">
-       <int>10</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern7">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern7"/>
+        <int>1</int>
+       </void>
       </void>
-      <void property="type">
-       <int>1</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
-      </void>
-     </object>
-    </void>
-    <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>randomCloseNumber</string>
+       <void method="set">
+        <object idref="SearchPattern7"/>
+        <int>10</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern8">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern8"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern9">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern9"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
     <void method="add">
-     <object class="ucl.physiol.neuroconstruct.project.SearchPattern">
-      <void property="type">
-       <int>0</int>
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern10">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern10"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern11">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern11"/>
+        <int>0</int>
+       </void>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.SearchPattern" id="SearchPattern12">
+      <void class="ucl.physiol.neuroconstruct.project.SearchPattern" method="getField">
+       <string>type</string>
+       <void method="set">
+        <object idref="SearchPattern12"/>
+        <int>0</int>
+       </void>
       </void>
      </object>
     </void>
@@ -3715,12 +4186,16 @@ cao_ccanl=2
     </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
-      <void property="numConnsInitiatingCellGroup">
+      <void id="NumberGenerator29" property="numConnsInitiatingCellGroup">
+       <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+        <string>numberType</string>
+        <void method="set">
+         <object idref="NumberGenerator29"/>
+         <int>11</int>
+        </void>
+       </void>
        <void property="fixedNum">
         <float>10.0</float>
-       </void>
-       <void property="numberType">
-        <int>11</int>
        </void>
       </void>
       <void property="onlyConnectToUniqueCells">
@@ -3790,12 +4265,16 @@ cao_ccanl=2
     </void>
     <void method="add">
      <object class="ucl.physiol.neuroconstruct.project.ConnectivityConditions">
-      <void property="numConnsInitiatingCellGroup">
+      <void id="NumberGenerator30" property="numConnsInitiatingCellGroup">
+       <void class="ucl.physiol.neuroconstruct.utils.NumberGenerator" method="getField">
+        <string>numberType</string>
+        <void method="set">
+         <object idref="NumberGenerator30"/>
+         <int>11</int>
+        </void>
+       </void>
        <void property="fixedNum">
         <float>0.51</float>
-       </void>
-       <void property="numberType">
-        <int>11</int>
        </void>
       </void>
      </object>
